@@ -11,7 +11,7 @@ a = 0
 conexao = mysql.connector.connect(
     host = 'localhost',
     user = 'root',
-    password = '1801',
+    password = 'pregador17',
     database = 'bd_projeto'
 )
 
@@ -36,8 +36,9 @@ conexao.commit() #edita o BD'''
 
 comando = f'SELECT * FROM cadastro1,cadastro2'
 cursor.execute(comando)
-resultado = cursor.fetchall() #Ler banco de dados 
-print(resultado)
+resultado = cursor.fetchall() #Ler banco de dados
+#if resultado[i][0] == resultado[i][5] and 'Mary' == resultado[i][1] and senha == resultado[i][2]:
+print(resultado[50])
 
 ##UPDATE
 
